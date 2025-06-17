@@ -1,0 +1,187 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    background: linear-gradient(to right, #c00000, #2169e4); 
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    color: #f4f4f4;
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 990px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(17, 35, 96, 0.501);
+    border-radius: 15px;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+#logofs {
+    fill: #8e8e8e;
+}
+
+#logofs:focus {
+    fill: rgb(225, 28, 28);
+}
+
+.search {
+    width: 300px;
+    color: #fff;
+    background: linear-gradient(to right, #434343, #000000);
+    padding: 13px 14px;
+    border: 2px solid #f9d423;
+    border-radius: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.search:focus {
+    outline: none;
+    border: 2px solid #4facfe;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.btn {
+    color: white;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: -28px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    
+    color: black;
+    border-radius: 50%;
+}
+
+.search_flex {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 60px;
+    color: #ff7675;
+}
+.welcome {
+     width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    color: #f9d423;
+    
+}
+.welcome h2{
+    font-size:50px;
+
+    
+}
+
+.nf-title {
+    color: #ffeaa7;
+    margin-top: 0;
+}
+
+#notfound {
+    text-align: center;
+    margin-top: 180px;
+    color: #dfe6e9;
+    font-size: 25px;
+}
+
+.d-none {
+    display: none;
+}
+
+.moviecontainer {
+    width: 900px;
+    padding: 15px;
+    margin: 40px auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+    background: rgba(239, 2, 2, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie1 {
+  flex: 1;
+  padding-right: 10px;
+}
+
+.movie2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #f9ca24;
+}
+
+.poster {
+    border-radius: 12px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.poster:hover {
+    transform: scale(1.04);
+}
+
+#actors {
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search {
+        width: 100%;
+    }
+    .moviecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .poster {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

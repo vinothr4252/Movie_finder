@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar">
+     <a href=""><img src="images.png" alt="" class="logo"></a>
+     <div class="search_flex">
+         <input type="text" placeholder="Search Movie Name" id="moviename" class="search">
+         <button  class="btn" onclick = "searchmovie()"><svg  id="logofs"   xmlns="http://www.w3.org/2000/svg" width="16" height="16"  class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></button>
+    </div>
+</nav>
+   <div class="welcome" id="welcome">
+      <h2 style="text-align:center; color: #f1f1f1; margin-top: 100px;">🎬 Welcome to Movie Finder !</h2>
+       <p>Discover detailed information about your favorite films including genre, release date, cast, box office performance, awards, and IMDb rating. Whether it's a blockbuster or a hidden gem, just type in the title and explore!</p>
+       <p style="text-align:center; color: #dcdcdc;">Type a movie name in the search bar above to get started.</p>
+    </div>
+
+   <div id="notfound" class="d-none">
+       <div class="icon">😵‍💫😵‍💫</div>
+       <h2 cls="nf-title"> Couldn't   find !! <span id="namdfawde">23</span>  </h2>
+       <P>Try search for something else or Try with a different spelling</P>
+   </div>
+    
+   <div id="found" class="d-none ">
+    <div class="moviecontainer"  id="found">
+    <div  class="movie1">
+        <p id="title" class='title'>  </p>
+        <p> <strong>Genre</strong>: <span  id="genre"></span></p>
+        <p> <strong>Released on        </strong> : <span id="date"></span></p>
+        <p> <strong>Actors       </strong>     : <span id="actors"></span></p>
+        <p> <strong>Boxoffice collection</strong>: <span id="collection"></span></p>
+        <p> <strong>Awards            </strong>   : <span id="awards"></span></p>
+        <p> <strong>Directors</strong>  : <span id="directors"></span></p>
+        <p> <strong>writer</strong>  : <span id="writer"></span></p>
+        <p> <strong>IMDB rating</strong>      : <span id="rating"></span></p>
+
+
+    </div>
+    <div class="movie2" >
+        <img src="https://m.media-amazon.com/images/M/MV5BMzAyMWE0MjgtMDVjNS00ZDMyLWE4NjQtNWU2ZDgyYTlmMjdjXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@._V1_SX300.jpg/1600x1000" alt="" class="poster" id="poster">
+    </div> 
+ </div>
+   </div>
+<script src="app.js"></script>
+</body>
+</html>
